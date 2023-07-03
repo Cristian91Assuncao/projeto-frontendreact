@@ -6,6 +6,7 @@ export const SectionStyle = styled.section`
     flex-direction: column;
     gap: 5px;
     border: solid 1px black;
+    height: 50vh;
     input {
         width: 130px;
     }
