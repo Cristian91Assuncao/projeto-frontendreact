@@ -1,16 +1,21 @@
 import styled from "styled-components";
 
-export const StylesProductCard = styled.section`
-    /* border: solid 1px black; */
+export const ProductCardStyles = styled.section`
+    border: solid 2px black;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     /* height: 270px; */
+    /* gap: 40px;     */
+    
 
     div {
-        border: solid 1px black;
-        display: grid;
+        /* border: solid 1px black; */
+        
+        width: 250px;
+        height: 300px;
+        /* grid-auto-flow: row */
     }
 
     p {
@@ -24,12 +29,17 @@ export const StylesProductCard = styled.section`
         justify-self: center;
     }
 
-    h3 {
+    img {
+        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         border: solid 1px black;
-        height: 230px;
-        width: 220px;
+        height: 210px;
+        width: 250px;
+    }
+
+    ul {
+        list-style-type: none;
     }
 `

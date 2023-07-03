@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-
+import BackgroundSite from './img/background.png'
 const GlobalStyles = createGlobalStyle`
     *   {
         padding: 0;
@@ -8,8 +8,12 @@ const GlobalStyles = createGlobalStyle`
     }
     .App {
         display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-columns: 2fr 6fr 2fr;
+        height: 100vh;
+        /* width: 50vw; */
+        /* background-color: lightskyblue; */
     }
+
 `;
 
 export default GlobalStyles;
