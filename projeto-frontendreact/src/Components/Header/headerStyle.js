@@ -8,11 +8,12 @@ const HeaderStyle = styled.div`
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     gap: 40vh;
+    width: 114vw;
 
     h1 {
         justify-self: center;
         align-self: center;
-        font-size: 10vh;
+        font-size: 5vw;
     }
 
     img {

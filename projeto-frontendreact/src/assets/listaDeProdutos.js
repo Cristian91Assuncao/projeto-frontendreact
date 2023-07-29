@@ -45,7 +45,7 @@ export const listaDeProdutos = [
           id: 8,
           name: "Camiseta Astronauta Dreamer",
           value: 80.0,
-          imageUrl: "https://www.rockzclub.com.br/wp-content/uploads/2017/10/MR-030.jpg"
+          imageUrl: "https://images.tcdn.com.br/img/img_prod/1104386/camiseta_azul_astronauta_nasa_1045_variacao_6279_1_ab27817e98f4d11cfb5f6ef09a161c8a.jpg"
         },
         {
           id: 9,

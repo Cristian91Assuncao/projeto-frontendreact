@@ -14,4 +14,8 @@ export const SectionStyle = styled.section`
         margin: 3px 5px;
     }
 
+    button {
+        margin-top: 30px;
+    }
+
 `

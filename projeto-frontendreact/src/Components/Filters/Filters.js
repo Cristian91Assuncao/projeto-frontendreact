@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Botao, SectionStyle } from './FiltersStyle'
+import React from 'react'
+import { SectionStyle } from './FiltersStyle'
 
 export default function Filters({
   minFilter,
@@ -7,7 +7,8 @@ export default function Filters({
   maxFilter,
   setMaxFilter,
   searchFilter,
-  setSearchFilter
+  setSearchFilter,
+  limparFiltros
 })
 {
   const minFilterChange = (event) => {
@@ -41,6 +42,7 @@ export default function Filters({
       <p>Busca por nome:</p>
       <input type="text" value={searchFilter} onChange={searchFilterChange} />      
       </div>
+      <button onClick={limparFiltros}>Limpar Filtros</button>
     </SectionStyle>
 
   )
