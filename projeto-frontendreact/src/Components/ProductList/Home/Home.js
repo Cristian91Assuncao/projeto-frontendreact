@@ -1,19 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { HomeStyles } from './HomeStyle'
-import ProductCard from '../ProductCard/ProductCard'
+// import ProductCard from '../ProductCard/ProductCard'
 
 export default function Home({
   renderListaProdutos,
   ordination,
   setOrdination,
-  productList,
-  minFilter,
-  maxFilter,
-  searchFilter,
-  cart,
-  setCart,
-  amount,
-  setAmount
+  addCart,
+  
+  
 }) {
   // console.log(renderListaProdutos);
   // const [ordination, setOrdination] = useState('default');
@@ -25,10 +20,10 @@ export default function Home({
   // const novaLista = productList.map((cadaProduto)=>cadaProduto)
 
   return (
-    <HomeStyles>
-      
+    <HomeStyles>      
       <div className = "cabecaHome">
       <p>Quantidade de produtos: {renderListaProdutos.length}</p>
+
       <div className='ordem'>
       <p>Ordenação:</p>
       <select value={ordination} onChange={handleOrdinationChange}>
@@ -37,15 +32,14 @@ export default function Home({
         <option value="decrescente">Decrescente</option>
       </select>
       </div>
+      
       </div>
 
       <div className='produtosHome'>
       {renderListaProdutos}
-      </div>
-
-
-
-   
+      {/* {produtosCard} */}
+      {addCart}
+      </div>   
     </HomeStyles>
 
   )

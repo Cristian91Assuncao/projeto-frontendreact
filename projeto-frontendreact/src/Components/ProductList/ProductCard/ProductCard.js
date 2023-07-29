@@ -1,29 +1,19 @@
 import React from 'react'
+// import { useState } from 'react';
 import { ProductCardStyles } from './ProductCardStyle'
-
-// const Produtos = ({productList}) => {
-//   return (
-//     <div >
-    
-//       <img src={productList.imageUrl}/>
-//       <p>{productList.name}</p>
-//       <p>{productList.value}</p>    
-//       <button>Adicionar ao Carrinho</button>
-//   </div>
-//   )
+// import { listaDeProdutos } from '../../../assets/listaDeProdutos';
 
 
-// }
 
-
-export default function ProductCard({produto, addCart}) {
-  console.log(produto);
+export default function ProductCard({addCart, produto}) {
+  
+  
   return (
     <>
       <ProductCardStyles>
-      <img src={produto.imageUrl}/>
+      <img src={produto.imageUrl} alt={produto.name}/>
       <p>{produto.name}</p>
-      <p>R$ {produto.value}</p>    
+      <p>R$ {produto.value},00</p>    
       <button onClick={()=>addCart(produto)}>Adicionar ao Carrinho</button>
       </ProductCardStyles>
 
